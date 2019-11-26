@@ -1,0 +1,24 @@
+sky_on         false      ; Enable/disable the outer sky.  Creates daytime or nighttime.
+num_samples    5000       ; Number of "photons" per pixel.  Daytime: 10-100.  Nighttime: 500-5000.  Fewer = faster.
+max_bounces    30         ; Max number of photon bounces between objects before timeout.  Typical: 10-50
+xy_pixels      300 150    ; Size of final image (width x height).  Smaller is faster.
+aliasing_on    true       ; Allow edge fuzziness that looks more realistic.
+aperture_size  0.0        ; Adjust camera focus effect.  Perfect focus: 0.0    Typical focus: 0.05-1.0
+field_of_view  25.0       ; Adjust camera width effect.  Typical 10-40
+look_at        0 0 2      ; Coordinate of what to look at.  East North Up
+look_from      0 -30 5    ; Coordinate of camera location.  East North Up
+
+
+
+
+object sphere 0 0 -5000 5000 matte white  ; ground
+
+object sphere , 30 100 -30 , 55 , matte .9 .9 .9       ; right mountain
+object sphere , -30 90 -30 , 44 , matte .9 .9 .9       ; left  mountain
+
+
+object sphere , 0  0  0 ,  2  ,  matte gray        ; door
+object sphere , -3.5  1  0 ,  4  ,  matte gray     ; body
+
+
+object sphere , 100 -100 50 , 30  , light 1 .8 .3 20  ; sun

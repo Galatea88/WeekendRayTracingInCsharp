@@ -1,0 +1,1 @@
+raytrace input_overhead_light.txt overhead_light.png

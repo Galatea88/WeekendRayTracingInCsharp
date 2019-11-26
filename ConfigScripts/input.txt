@@ -1,0 +1,106 @@
+
+
+
+
+; This is a comment.
+; Boolean values can be: 0, 1, false, true, off, on
+
+
+
+
+
+sky_on         true       ; Enable/disable the outer sky.  Creates daytime or nighttime.
+num_samples    50         ; Number of "photons" per pixel.  Daytime: 10-100.  Nighttime: 500-5000.  Fewer = faster.
+max_bounces    20         ; Max number of photon bounces between objects before timeout.  Typical: 10-50
+xy_pixels      1600 800   ; Size of final image (width x height).  Smaller is faster.
+aliasing_on    true       ; Allow edge fuzziness that looks more realistic.
+aperture_size  0.05       ; Adjust camera focus effect.  Perfect focus: 0.0    Typical focus: 0.05-1.0
+field_of_view  25.0       ; Adjust camera width effect.  Typical 10-40
+look_at        0 0 1      ; Coordinate of what to look at.  East North Up
+look_from      -2 -7 1    ; Coordinate of camera location.  East North Up
+
+
+object sphere 0 0 -1000 1000 checker black white   ; ground
+object sphere 0 0 1 1 glass 1 .5 .5
+object sphere 2 0 1 1 metal gold .05
+object sphere -2 0 1 1 matte purple
+
+
+
+; 
+; 
+; 
+; Named colors:
+;     red
+;     green
+;     blue
+;     purple
+;     violet
+;     yellow
+;     black
+;     gray
+;     white / clear
+;     orange
+;     brown
+;     gold
+; 
+; 
+; 
+; Materials:
+;     matte    : rough, opaque surface
+;     checker  : rough, opaque surface in checker pattern
+;     glass    : reflective surface, transparent body
+;     metal    : reflective surface, opaque body, roughness factor
+;     light    : emissive
+; 
+; 
+; 
+; Objects:
+;     sphere
+;     cylinder
+; 
+; 
+;object sphere East North Up Radius Material Parameters
+;
+;
+; Delimiters:
+;   space, comma, equal sign [ ,=]
+;
+; 
+;-------  Matte ---------
+;                 E   N   U   Radius  Material Color
+;object sphere   1.1 2.2 3.3   2.0   matte red
+;object sphere , 1.1 2.2 3.3 , 2.0 , matte red          ; same as above
+;object sphere   1.1 2.2 3.3   2.0   matte 1.0 0.0 0.0  ; same as above, RedGreenBlue percentages
+; 
+;-------  Checker ---------
+;                                             Color1     Color2
+;object sphere  ,  0   0  -1000 , 1000 , checker gray       white
+;object sphere  ,  0   0  -1000 , 1000 , checker .5 .5 .5   1.0 1.0 1.0  ; same as above, RedGreenBlue percentages
+; 
+;-------  Glass ---------
+;                                       Glass  Color
+;object sphere  ,  1.1 2.2 3.3  , 2.0 ,  glass  clear
+;object sphere  ,  1.1 2.2 3.3  , 2.0 ,  glass  1.0 1.0 1.0  ; same as above
+;object sphere  ,  1.1 2.2 3.3  , 2.0 ,  glass  red          ; red
+;object sphere  ,  1.1 2.2 3.3  , 2.0 ,  glass  1.0 0.0 0.0  ; same as above
+; 
+;-------  Metal ---------
+;                                       Metal Color       Roughness (0.0-1.0)
+;object sphere  ,  0.0 0.0 1.0  , 1.00 , metal gold            .3
+;object sphere  ,  0.0 0.0 1.0  , 1.00 , metal 1.0 1.0 1.0    0.0  ; perfect mirror
+; 
+; 
+;-------  Light ---------
+;                                       Light Color       Intensity (1.0-20.0 typical)
+;object sphere  ,  1.1 2.2 3.3  ,  2.0 , light white        10
+;object sphere  ,  1.1 2.2 3.3  ,  2.0 , light 1.0 1.0 1.0  10    ; same as above
+;object sphere  ,  1.1 2.2 3.3  ,  2.0 , light red          2
+; 
+; 
+; 
+; 
+
+
+
+

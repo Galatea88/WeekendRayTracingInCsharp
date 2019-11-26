@@ -1,0 +1,1 @@
+raytrace input_igloo.txt igloo.png

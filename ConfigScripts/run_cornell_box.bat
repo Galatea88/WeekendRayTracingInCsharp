@@ -1,0 +1,1 @@
+raytrace input_cornell_box.txt cornell_box.png

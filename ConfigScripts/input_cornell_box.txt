@@ -1,0 +1,27 @@
+
+     
+sky_on false
+num_samples 500   ; when the sky is off, need many more samples
+max_bounces 10    ; reduce max_bounces to enhance speed in this enclosed volume
+xy_pixels 200 200
+aliasing_on 1
+aperture_size 0.0
+field_of_view 15.0
+look_at 0 0 5
+look_from 0 -50 5
+
+
+
+object sphere 0 -2 13 4 light white 5  ; overhead light
+
+object sphere 0 0 -1000     1000 matte white  ; floor
+object sphere -1005 0 5   1000 matte red   ; left wall
+object sphere 1005  0 5     1000 matte green ; right wall
+object sphere 0 1005 5     1000 matte white  ; back wall
+object sphere 0 0 1010      1000 matte white ; ceiling
+
+object sphere 0 0 3 1 glass clear
+object sphere -4.0 0 5 1 matte 0.4 0.2 0.1
+object sphere 4.0 0 7 1 metal 0.7 0.6 0.5 0
+
+ 

@@ -1,0 +1,116 @@
+; This rendering will take a long time because of the large number of samples and number of objects.
+     
+sky_on false
+num_samples 1000   ; when the sky is off, need many more samples
+max_bounces 30
+xy_pixels 400 200
+aliasing_on true
+aperture_size 0.1
+field_of_view 25.0
+look_at 7 7 1
+look_from 3 -15 8
+
+
+
+object sphere 0 0 -1000 1000 checker gray white
+
+object sphere 7 7 13 4 light white 10  ; overhead light
+
+object sphere 0.0 0.0 1.0 1.00 matte 0.028 0.071 0.080
+object sphere 0.0 0.0 1.0 1.05 glass clear             ; covering the matte surface with glass makes it shiny
+object sphere 0.0 2.0 2.9 1.00 matte 0.246 0.624 0.702
+object sphere 0.0 2.0 2.9 1.05 glass clear
+object sphere 0.0 4.0 2.6 1.00 matte 0.165 0.419 0.473
+object sphere 0.0 4.0 2.6 1.05 glass clear
+object sphere 0.0 6.0 2.5 1.00 matte 0.220 0.559 0.630
+object sphere 0.0 6.0 2.5 1.05 glass clear
+object sphere 0.0 8.0 1.6 1.00 matte 0.045 0.115 0.130
+object sphere 0.0 8.0 1.6 1.05 glass clear
+object sphere 0.0 10.0 1.9 1.00 matte 0.019 0.047 0.053
+object sphere 0.0 10.0 1.9 1.05 glass clear
+object sphere 0.0 12.0 1.6 1.00 matte 0.156 0.397 0.447
+object sphere 0.0 12.0 1.6 1.05 glass clear
+object sphere 2.0 0.0 1.2 1.00 matte 0.191 0.079 0.012
+object sphere 2.0 0.0 1.2 1.05 glass clear
+object sphere 2.0 2.0 1.5 1.00 matte 0.776 0.322 0.049
+object sphere 2.0 2.0 1.5 1.05 glass clear
+object sphere 2.0 4.0 2.6 1.00 matte 0.426 0.177 0.027
+object sphere 2.0 4.0 2.6 1.05 glass clear
+object sphere 2.0 6.0 1.1 1.00 matte 0.549 0.228 0.035
+object sphere 2.0 6.0 1.1 1.05 glass clear
+object sphere 2.0 8.0 2.8 1.00 matte 0.062 0.026 0.004
+object sphere 2.0 8.0 2.8 1.05 glass clear
+object sphere 2.0 10.0 2.8 1.00 matte 0.104 0.043 0.007
+object sphere 2.0 10.0 2.8 1.05 glass clear
+object sphere 2.0 12.0 1.9 1.00 matte 0.559 0.232 0.035
+object sphere 2.0 12.0 1.9 1.05 glass clear
+object sphere 4.0 0.0 2.3 1.00 matte 0.716 0.169 0.315
+object sphere 4.0 0.0 2.3 1.05 glass clear
+object sphere 4.0 2.0 2.7 1.00 matte 0.258 0.061 0.113
+object sphere 4.0 2.0 2.7 1.05 glass clear
+object sphere 4.0 4.0 1.1 1.00 matte 0.389 0.092 0.171
+object sphere 4.0 4.0 1.1 1.05 glass clear
+object sphere 4.0 6.0 2.9 1.00 matte 0.630 0.149 0.277
+object sphere 4.0 6.0 2.9 1.05 glass clear
+object sphere 4.0 8.0 1.1 1.00 matte 0.147 0.035 0.065
+object sphere 4.0 8.0 1.1 1.05 glass clear
+object sphere 4.0 10.0 2.0 1.00 matte 0.496 0.117 0.218
+object sphere 4.0 10.0 2.0 1.05 glass clear
+object sphere 4.0 12.0 1.7 1.00 matte 0.019 0.004 0.008
+object sphere 4.0 12.0 1.7 1.05 glass clear
+object sphere 6.0 0.0 2.9 1.00 matte 0.075 0.299 0.364
+object sphere 6.0 0.0 2.9 1.05 glass clear
+object sphere 6.0 2.0 1.3 1.00 matte 0.032 0.127 0.155
+object sphere 6.0 2.0 1.3 1.05 glass clear
+object sphere 6.0 4.0 1.8 1.00 matte 0.082 0.325 0.397
+object sphere 6.0 4.0 1.8 1.05 glass clear
+object sphere 6.0 6.0 2.6 1.00 matte 0.035 0.138 0.169
+object sphere 6.0 6.0 2.6 1.05 glass clear
+object sphere 6.0 8.0 1.4 1.00 matte 0.017 0.066 0.081
+object sphere 6.0 8.0 1.4 1.05 glass clear
+object sphere 6.0 10.0 1.0 1.00 matte 0.086 0.341 0.416
+object sphere 6.0 10.0 1.0 1.05 glass clear
+object sphere 6.0 12.0 2.9 1.00 matte 0.123 0.488 0.596
+object sphere 6.0 12.0 2.9 1.05 glass clear
+object sphere 8.0 0.0 1.3 1.00 matte 0.187 0.084 0.099
+object sphere 8.0 0.0 1.3 1.05 glass clear
+object sphere 8.0 2.0 2.0 1.00 matte 0.292 0.131 0.154
+object sphere 8.0 2.0 2.0 1.05 glass clear
+object sphere 8.0 4.0 1.3 1.00 matte 0.789 0.356 0.416
+object sphere 8.0 4.0 1.3 1.05 glass clear
+object sphere 8.0 6.0 2.3 1.00 matte 0.422 0.190 0.222
+object sphere 8.0 6.0 2.3 1.05 glass clear
+object sphere 8.0 8.0 2.8 1.00 matte 0.729 0.328 0.384
+object sphere 8.0 8.0 2.8 1.05 glass clear
+object sphere 8.0 10.0 2.6 1.00 matte 0.069 0.031 0.036
+object sphere 8.0 10.0 2.6 1.05 glass clear
+object sphere 8.0 12.0 1.6 1.00 matte 0.561 0.253 0.296
+object sphere 8.0 12.0 1.6 1.05 glass clear
+object sphere 10.0 0.0 2.0 1.00 matte 0.619 0.136 0.321
+object sphere 10.0 0.0 2.0 1.05 glass clear
+object sphere 10.0 2.0 1.8 1.00 matte 0.653 0.144 0.339
+object sphere 10.0 2.0 1.8 1.05 glass clear
+object sphere 10.0 4.0 1.3 1.00 matte 0.719 0.158 0.373
+object sphere 10.0 4.0 1.3 1.05 glass clear
+object sphere 10.0 6.0 2.1 1.00 matte 0.322 0.071 0.167
+object sphere 10.0 6.0 2.1 1.05 glass clear
+object sphere 10.0 8.0 2.8 1.00 matte 0.811 0.178 0.421
+object sphere 10.0 8.0 2.8 1.05 glass clear
+object sphere 10.0 10.0 1.3 1.00 matte 0.360 0.079 0.187
+object sphere 10.0 10.0 1.3 1.05 glass clear
+object sphere 10.0 12.0 2.0 1.00 matte 0.039 0.009 0.020
+object sphere 10.0 12.0 2.0 1.05 glass clear
+object sphere 12.0 0.0 2.5 1.00 matte 0.252 0.908 0.007
+object sphere 12.0 0.0 2.5 1.05 glass clear
+object sphere 12.0 2.0 1.4 1.00 matte 0.063 0.228 0.002
+object sphere 12.0 2.0 1.4 1.05 glass clear
+object sphere 12.0 4.0 2.4 1.00 matte 0.057 0.206 0.002
+object sphere 12.0 4.0 2.4 1.05 glass clear
+object sphere 12.0 6.0 2.0 1.00 matte 0.260 0.935 0.008
+object sphere 12.0 6.0 2.0 1.05 glass clear
+object sphere 12.0 8.0 1.2 1.00 matte 0.039 0.140 0.001
+object sphere 12.0 8.0 1.2 1.05 glass clear
+object sphere 12.0 10.0 2.1 1.00 matte 0.218 0.784 0.006
+object sphere 12.0 10.0 2.1 1.05 glass clear
+object sphere 12.0 12.0 2.3 1.00 matte 0.188 0.678 0.006
+object sphere 12.0 12.0 2.3 1.05 glass clear
