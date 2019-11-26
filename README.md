@@ -10,3 +10,11 @@ Built with Visual Studio 2019 as a C# console application.
 - The ray tracing parameters for the environment, camera, and objects are configured by input scripts.  The default input file is 'input.txt'.
 
 - All output files are in PNG format.  The default output file is 'outfile.png'.
+
+Examples:
+
+![obligatory ball field](/Examples/ball_field.png)
+
+![overhead lighting ball field](/Examples/overhead_light.png)
+
+![igloo moonscape](/Examples/igloo.png)
